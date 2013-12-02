@@ -7,12 +7,12 @@ window.app = {
 
                 data.forEach(function( repo ) {
                     className = "";
-                    if ( repo.stargazers_count > 1000 ) { className = "popular"; }
-                    if ( repo.stargazers_count > 5000 ) { className = "very-popular"; }
+                    if ( repo.stargazers_count >= 1000 ) { className = "popular"; }
+                    if ( repo.stargazers_count >= 5000 ) { className = "very-popular"; }
                     
                     html += "<li class='" + className + "'>" + repo.name + "</li>";
                 });
-                $( "#repos" ).html( html )
+                $( "#repos" ).html( html );
             });            
     }
 };
