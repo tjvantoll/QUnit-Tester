@@ -4,19 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/index.css">
+        <script src="cordova.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/app.js"></script>
         <title>Hello World</title>
     </head>
     <body>
-        <a href="tests/index.html" style="font-size: 10em;">Tests</a>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
-        <script>app.initialize();</script>
+        <a href="tests/index.html" style="font-size: 3em;">Tests</a>
+        
+        <h3>jQuery git Repositories</h3>
+        <ul id="repos"></ul>
+
+        <script>
+			document.addEventListener( "deviceready", app.loadRepos );
+        </script>
     </body>
 </html>
