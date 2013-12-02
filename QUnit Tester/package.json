@@ -1,0 +1,9 @@
+{
+  "name": "QUnit-Tester",
+  "version": "1.0.0",
+  "description": "Testing integration of QUnit with PhoneGap/Cordova applications",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-qunit": "~0.3.0"
+  }
+}
