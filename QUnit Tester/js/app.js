@@ -1,6 +1,6 @@
 window.app = {
     loadRepos: function() {
-        $.getJSON( "https://api.github.com/orgs/jquery/repos" ) 
+        return $.getJSON( "https://api.github.com/orgs/jquery/repos" ) 
             .then( function( data ) {
                 var className,
                 	html = "";
